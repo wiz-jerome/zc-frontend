@@ -1,0 +1,290 @@
+body{
+  margin: 0 !important;
+  font-family:PingFangSC-Regular;
+}
+
+html,body{
+  overflow:hidden;overflow-y:auto;
+  background: @bg-white;
+}
+
+@base-color:#FBC873;
+@base-dark-color:#D7A963;
+
+@bg-white:#FFFFFF;
+@bg-white-dark:#F1F1F1;
+@bg-gray:#E9E9E9;
+
+@font-color-light:#999999;
+@font-color-dark:#666666;
+@font-color-black:#333333;
+@font-color-white:#FFFFFF;
+
+@border-color-gray:#D8D8D8;
+@border-color-gray-light:#D8D8D8;
+
+.ov-h{
+  overflow: hidden;
+}
+
+.row{
+  display: inline-block;
+  box-sizing: border-box;
+  width: 100vw;
+  padding:0 24/50rem;
+}
+
+.bg{
+  min-height: 100vh;
+  width:100vw;
+}
+.fl{
+  float: left;
+}
+
+.fr{
+  float:right;
+}
+
+.tl{
+  text-align: left;
+}
+
+.tc{
+  text-align: center;
+}
+
+.tr{
+  text-align: right;
+}
+
+radius-8{
+  border-radius: 8px;
+}
+
+.f-base{
+ color:@base-color;
+  font-weight: bold;
+}
+
+.f-white{
+  color: @font-color-white;
+}
+
+.f-black{
+  color: @font-color-black;
+}
+
+.f-dark{
+  color: @font-color-dark;
+}
+
+.f-light{
+  color: @font-color-light;
+}
+.font-22{
+  font-size: 22px;
+  line-height: 26px;
+}
+
+.font-20{
+  font-size: 20px;
+  line-height: 23px;
+}
+
+.font-18{
+  font-size: 18px;
+  line-height: 23px;
+}
+
+.font-14{
+  font-size:14px;
+  line-height: 20px;
+}
+
+//普通文本大小
+.font-12{
+  font-size:12px;
+  line-height: 17px;
+}
+
+//备注字体大小
+.font-10{
+  font-size: 10px;
+  line-height: 14px;
+}
+
+.mg-b5{
+  margin-bottom: 5px;
+}
+
+.mg-b10{
+  margin-bottom: 10px;
+}
+
+.mg-b15{
+  margin-bottom: 15px;
+}
+
+.mg-b20{
+  margin-bottom: 20px;
+}
+
+.mg-b40{
+  margin-bottom: 40px;
+}
+
+.mg-t5{
+  margin-top: 5px;
+}
+
+.mg-t15{
+  margin-top: 15px;
+}
+
+.mg-t40{
+  margin-top: 40px;
+}
+
+.mg-l5{
+  margin-left: 5px;
+}
+
+.mg-r15{
+  margin-right: 15px;
+}
+
+.pd-10{
+  padding: 10px;
+}
+
+.pd-lr-10{
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.height-55vh{
+  height: 55vh !important;
+}
+
+.height-60vh{
+  height: 60vh !important;
+}
+
+.width-100per{
+  width: 100%;
+}
+
+.p-relative{
+  position: relative;
+}
+
+//垂直居中，父元素设置relative定位
+.ver-center{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.va-text-b{
+  vertical-align: text-bottom;
+}
+
+.border-gray{
+  border: 1px solid @border-color-gray;
+}
+
+.no-border{
+  border: none !important;
+}
+
+//按钮样式
+.sure-btn,.cancel-btn{
+  display: inline-block;
+  text-align: center;
+  line-height: 25px;
+  font-size:18px;
+  padding:9px 0 6px 0;
+  width: 100%;
+  border-radius: 21px;
+  cursor: pointer;
+  //动画
+  transition: all 1s;
+  -moz-transition: all 1s;
+  -webkit-transition: all 1s;
+  -o-transition:all 1s;
+}
+
+.sure-btn{
+  color:@font-color-white;
+  background: @base-color;
+}
+
+.sure-btn:active{
+  background: @base-dark-color;
+}
+
+.cancel-btn{
+  color:#979797;
+  background: @bg-white;
+  border: 1px solid #979797;
+}
+
+.cancel-btn:active{
+  color:@font-color-white;
+  background: #FFF7F7;
+  border: 1px solid #FFF7F7;
+}
+
+//标志
+.gray-mark,.info-mark,.orange-mark{
+  border-radius: 12px ;
+  padding: 3px 9px;
+  text-align: center;
+  font-size: 12px;
+  line-height: 17px;
+}
+
+.gray-mark{
+  border: 1px solid @border-color-gray;
+  color: @border-color-gray;
+}
+.info-mark{
+  border: 1px solid @base-color;
+  color: @base-color;
+}
+.orange-mark{
+  border: 1px solid @base-color;
+  color: @bg-white;
+  background: @base-color;
+}
+
+//面板
+.panel{
+  background: @bg-white-dark;
+  width: 100%;
+  border-radius: 8px;
+}
+
+//动画效果
+.transition-all-1{
+  transition: all 1s !important;
+  -moz-transition: all 1s !important;
+  -webkit-transition: all 1s !important;
+  -o-transition:all 1s !important;
+}
+
+.transition-all-2{
+  transition: all 2s;
+  -moz-transition: all 2s;
+  -webkit-transition: all 2s;
+  -o-transition:all 2s;
+}
+
+.transition-height{
+  transition: min-height 1s ease-out;
+  -moz-transition:  min-height 1s ease-out;
+  -webkit-transition:  min-height 1s ease-out;
+  -o-transition: min-height 1s ease-out;
+}
+

@@ -1,0 +1,23 @@
+<!DOCTYPE html><html lang=zh><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1,user-scalable=0,viewport-fit=auto"><script>(function () {
+            window.addEventListener("orientation" in window ? "deviceorientation" : "resize", setSize);
+            setSize();
+            function setSize() {
+                var html = document.documentElement;
+                var hWidth = html.getBoundingClientRect().width;
+                html.style.fontSize = hWidth / 15 + "px";//根据不同的屏幕宽度重置html的字体大小//15为自定义比例
+            }
+        })()</script><title></title><style>body {
+        width: 100%;
+      }
+      @media only screen and (device-width: 375px) and (device-height: 812px) and
+      (-webkit-device-pixel-ratio: 3) {
+        html {
+          height: 100%;
+          box-sizing: border-box;
+          padding: 0 0 34px 0;
+        }
+      }</style><link href=./app.34f473326a0ed9c9004925e5fe96c919.css rel=stylesheet></head><body><div id=app></div><script type=text/javascript src=./manifest.d16c638cef71c6b29aa0.js></script><script type=text/javascript src=./vendor.f49fa698a143dcfef3b4.js></script><script type=text/javascript src=./app.734cd710bf922f4fd17f.js></script></body><script>// 当页面高度超过视窗课件
+  // document.body.addEventListener('touchmove',function(event){
+  //   event.preventDefault()
+  //   // console.log('move')
+  // })</script></html>
